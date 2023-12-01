@@ -28,3 +28,38 @@
         }
     }
 }
+
+.work-with-us-homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 50px;
+
+    .work-with-us-homepage-image{
+        display: flex;
+        justify-content: flex-end;
+        padding: 5px;
+    }
+
+    .work-with-us-homepage-text{
+        padding: 5px;
+
+        p{
+            font-size: 20px;
+            line-height: 29px;
+            font-weight: 500;
+            color: $black;
+        }
+
+        .author{
+            color: $gray;
+            margin-top: 30px;
+        }
+
+        .author-position{
+            margin-top: 5px;
+            font-size: 13px;
+            color: $lightGray;
+        }
+    }
+}

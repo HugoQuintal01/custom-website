@@ -668,4 +668,34 @@ h1, .h1, h2, .h2 {
   font-weight: 300;
   line-height: 32px;
   margin-top: 40px;
+}
+
+.work-with-us-homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 50px;
+}
+.work-with-us-homepage .work-with-us-homepage-image {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.work-with-us-homepage .work-with-us-homepage-text {
+  padding: 5px;
+}
+.work-with-us-homepage .work-with-us-homepage-text p {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 500;
+  color: #212121;
+}
+.work-with-us-homepage .work-with-us-homepage-text .author {
+  color: #858585;
+  margin-top: 30px;
+}
+.work-with-us-homepage .work-with-us-homepage-text .author-position {
+  margin-top: 5px;
+  font-size: 13px;
+  color: #BBBBBB;
 }/*# sourceMappingURL=styles.css.map */
