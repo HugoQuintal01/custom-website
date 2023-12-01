@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Poppins:wght@400&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,7 +54,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6, p, span, a, li {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 * {
@@ -62,8 +62,8 @@ h1, h2, h3, h4, h5, h6, p, span, a, li {
 }
 
 html {
-  font-family: "Poppins", sans-serif;
-  color: #141414;
+  font-family: "Lato", sans-serif;
+  color: #212121;
   font-weight: 400;
   line-height: 1.618;
   font-size: 14px;
@@ -83,8 +83,8 @@ html {
 /* ======= HEADINGS ======= */
 /* ======================== */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
   margin: 0;
   line-height: 1.414;
 }
@@ -523,6 +523,30 @@ h1, .h1, h2, .h2 {
   padding: 0;
 }
 
-.teste123 {
-  color: red;
+.banner-homepage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner-homepage .titles-banner-homepage {
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 50px;
+}
+.banner-homepage .titles-banner-homepage h1 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+}
+.banner-homepage .titles-banner-homepage span {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 40px;
 }/*# sourceMappingURL=styles.css.map */

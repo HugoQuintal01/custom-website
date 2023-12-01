@@ -1,3 +1,30 @@
-.teste123{
-    color: red;
+.banner-homepage{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .titles-banner-homepage{
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 50px;
+
+        h1{
+            font-size: 80px;
+            font-weight: 300;
+            line-height: 80px;
+        }
+
+        span{
+            font-size: 32px;
+            font-weight: 300;
+            line-height: 32px;
+            margin-top: 40px;
+        }
+    }
 }
