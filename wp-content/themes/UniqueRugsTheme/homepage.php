@@ -14,7 +14,7 @@ Template Name: Custom Homepage
 </head>
 <body <?php body_class(); ?>> <!-- Add this line to include body classes -->
     <h1 class="teste123">Teste</h1>
-
+    <h2 class="teste123">Teste</h2>
     <?php wp_footer(); ?> <!-- Add this line to include WordPress footer elements -->
 </body>
 </html>
