@@ -647,7 +647,7 @@ h1, .h1, h2, .h2 {
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  background-image: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
@@ -698,4 +698,92 @@ h1, .h1, h2, .h2 {
   margin-top: 5px;
   font-size: 13px;
   color: #BBBBBB;
+}
+
+.unique-rugs-homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 150px 50px;
+  min-height: 100vh;
+}
+.unique-rugs-homepage .unique-rugs-homepage-absolute {
+  position: absolute;
+}
+.unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left {
+  top: 50px;
+  left: 100px;
+}
+.unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right {
+  right: 17%;
+}
+.unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-bottom-left {
+  bottom: 50px;
+  left: 10%;
+}
+.unique-rugs-homepage .unique-rugs-homepage-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+.unique-rugs-homepage .unique-rugs-homepage-content h2 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 500;
+  color: #212121;
+}
+.unique-rugs-homepage .unique-rugs-homepage-content p {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #212121;
+}
+.unique-rugs-homepage .unique-rugs-homepage-content a {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0) !important;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: center;
+}
+.button.button-black {
+  color: #212121;
+}
+.button.button-black:hover {
+  color: #212121;
+}
+.button.button-black::after {
+  background-color: #212121;
+}
+.button.button-white {
+  color: #FFFFFF;
+}
+.button.button-white:hover {
+  color: #FFFFFF;
+}
+.button.button-white::after {
+  background-color: #FFFFFF;
+}
+.button::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  transition-duration: 0.3s;
+}
+.button:hover::after {
+  width: 30%;
 }/*# sourceMappingURL=styles.css.map */

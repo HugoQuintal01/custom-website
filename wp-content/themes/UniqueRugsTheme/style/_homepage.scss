@@ -63,3 +63,107 @@
         }
     }
 }
+
+.unique-rugs-homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 150px 50px;
+    min-height: 100vh;
+
+    .unique-rugs-homepage-absolute{
+        position: absolute;
+
+        &.unique-rugs-homepage-image-top-left{
+            top: 50px;
+            left: 100px;
+        }
+
+        &.unique-rugs-homepage-image-right{
+            right: 17%;
+        }
+
+        &.unique-rugs-homepage-image-bottom-left{
+            bottom: 50px;
+            left: 10%;
+        }
+    }
+
+    .unique-rugs-homepage-content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 1;
+
+        h2{
+            text-align: center;
+            font-size: 48px;
+            line-height: 57.6px;
+            font-weight: 500;
+            color: $black;
+        }
+
+        p{
+            text-align: center;
+            margin-top: 40px;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: $black;
+        }
+
+        a{
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+}
+
+.button{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    position: relative;
+    background-color: $transparent !important;
+    transition-duration: $animationtime;
+    display: flex;
+    justify-content: center;
+
+    &.button-black{
+        color: $black;
+
+        &:hover{
+            color: $black;
+        }
+
+        &::after{
+            background-color: $black;
+        }
+    }
+
+    &.button-white{
+        color: $white;
+
+        &:hover{
+            color: $white;
+        }
+
+        &::after{
+            background-color: $white;
+        }
+    }
+
+    &::after{
+        content: '';
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        position: absolute;
+        transition-duration: $animationtime;
+    }
+
+    &:hover::after{
+        width: 30%;
+    }
+}

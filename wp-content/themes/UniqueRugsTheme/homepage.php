@@ -31,8 +31,19 @@ Template Name: Custom Homepage
         </div>
     </section>
     <section class="gridrowfull unique-rugs-homepage">
-        <div class="col-ld-3 col-d-3 col-t-12 col-12">
+        <div class="unique-rugs-homepage-absolute unique-rugs-homepage-image-top-left col-ld-3 col-d-3 col-t-12 col-12">
             <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/unique-rugs-01.jpg" alt="unique-rugs-01">
+        </div>
+        <div class="unique-rugs-homepage-absolute unique-rugs-homepage-image-right col-ld-2 col-d-2 col-t-12 col-12">
+            <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/unique-rugs-02.jpg" alt="unique-rugs-02">
+        </div>
+        <div class="unique-rugs-homepage-absolute unique-rugs-homepage-image-bottom-left col-ld-3 col-d-3 col-t-12 col-12">
+            <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/unique-rugs-03.jpg" alt="unique-rugs-03">
+        </div>
+        <div class="unique-rugs-homepage-content col-ld-6 col-d-6 col-t-12 col-12">
+            <h2 class="col-ld-8 col-d-8 col-t-12 col-12">Creating unique rugs at every stage.</h2>
+            <p class="col-ld-10 col-d-10 col-t-12 col-12">Our production facilities in Portugal offer you the tailor-made rugs in the best raw materials, combining technology with expert craftsmanship. With a team of talented Designers and an Innovation & Development Department we ensure that every brand and project is fulfilled according to its needs.</p>
+            <a class="button button-black" href="#work-with-us">Ir para Why work with us</a>
         </div>
     </section>
 
