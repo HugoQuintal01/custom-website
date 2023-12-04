@@ -1113,10 +1113,10 @@ body {
   width: 30px;
 }
 .menu .menu-hamburger:hover .line::after {
-  width: 30px;
+  width: 7px;
 }
 .menu .menu-hamburger:hover .line::before {
-  width: 30px;
+  width: 20px;
 }
 
 .footer {
@@ -1337,7 +1337,7 @@ body {
     margin-top: 75px;
   }
   body .own-collection-homepage .own-collection-homepage-top-section .top-section-right-div {
-    margin-top: 0;
+    margin-top: 50px;
   }
   body .own-collection-homepage .own-collection-homepage-top-section .top-section-right-div img {
     max-width: 200px;
@@ -1347,10 +1347,10 @@ body {
     flex-wrap: wrap;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay {
-    top: 140px;
+    top: 230px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay-background {
-    top: 140px;
+    top: 230px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div {
     padding: 0;
