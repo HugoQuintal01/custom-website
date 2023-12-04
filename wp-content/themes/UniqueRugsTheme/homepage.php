@@ -75,33 +75,33 @@ Template Name: Custom Homepage
                     <h4 class="col-ld-12 col-d-12 col-t-12 col-12">Bespoke Carpets</h4>
                 </div>
                 <div class="card-content col-ld-12 col-d-12 col-t-12 col-12">
-                    <div class="card-content-icon col-ld-1 col-d-1 col-t-4 col-4">
+                    <div class="card-content-icon col-ld-1 col-d-1 col-t-2 col-2">
                         <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/icon-carpets-01.svg" alt="icon-carpets-01">
                     </div>
-                    <div class="card-content-text col-ld-8 col-d-10 col-t-8 col-8">
+                    <div class="card-content-text col-ld-8 col-d-10 col-t-10 col-10">
                         <span>The of bespoke carpets</span>
-                        <p class="col-ld-9 col-d-9 col-t-9 col-9">Unleash your vision with Unique Rugs expert craftmanship. Immerse yourself in a collaborative journey where we work closely with our customers to bring the desired design to life.</p>
+                        <p class="col-ld-9 col-d-9 col-t-12 col-12">Unleash your vision with Unique Rugs expert craftmanship. Immerse yourself in a collaborative journey where we work closely with our customers to bring the desired design to life.</p>
                     </div>
                 </div>
                 <div class="card-content col-ld-12 col-d-12 col-t-12 col-12">
-                    <div class="card-content-icon col-ld-1 col-d-1 col-t-4 col-4">
+                    <div class="card-content-icon col-ld-1 col-d-1 col-t-2 col-2">
                         <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/icon-carpets-02.svg" alt="icon-carpets-02">
                     </div>
-                    <div class="card-content-text col-ld-8 col-d-10 col-t-8 col-8">
+                    <div class="card-content-text col-ld-8 col-d-10 col-t-10 col-10">
                         <span>Quality and excelence</span>
-                        <p class="col-ld-9 col-d-9 col-t-9 col-9">With our unwavering commitment to excellence and more than 77 years of experience, your rugs will be meticulously crafted to perfection</p>
+                        <p class="col-ld-9 col-d-9 col-t-12 col-12">With our unwavering commitment to excellence and more than 77 years of experience, your rugs will be meticulously crafted to perfection</p>
                     </div>
                 </div>
                 <div class="card-content col-ld-12 col-d-12 col-t-12 col-12">
-                    <div class="card-content-icon col-ld-1 col-d-1 col-t-4 col-4">
+                    <div class="card-content-icon col-ld-1 col-d-1 col-t-2 col-2">
                         <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/icon-carpets-03.svg" alt="icon-carpets-03">
                     </div>
-                    <div class="card-content-text col-ld-8 col-d-10 col-t-8 col-8">
+                    <div class="card-content-text col-ld-8 col-d-10 col-t-10 col-10">
                         <span>Unique Lead Times</span>
-                        <p class="col-ld-9 col-d-9 col-t-9 col-9">We offer a unique production time based on full in-house optimized processes and a delivery worldwide service.</p>
+                        <p class="col-ld-9 col-d-9 col-t-12 col-12">We offer a unique production time based on full in-house optimized processes and a delivery worldwide service.</p>
                     </div>
                 </div>
-                <div class="button-div col-ld-3 col-d-4 col-t-3 col-3">
+                <div class="button-div col-ld-3 col-d-4 col-t-7 col-7">
                     <a href="#" class="button button-white">Ir para Full service</a>
                 </div>
             </div>
@@ -118,7 +118,7 @@ Template Name: Custom Homepage
             <div class="unique-samples-left-div col-ld-6 col-d-6 col-t-12 col-12">
                 <h3 class="col-ld-8 col-d-12 col-t-12 col-12">Unique samples expressing excellence.</h3>
                 <p class="col-ld-10 col-d-12 col-t-12 col-12">We love helping turning dream designs into a resistant, high quality reality rug with these carefully selected fibers, colours and quality samples. To enhance your inspiration and ensure precise outcomes, we recommend utilizing our Sales Tools. Explore the vast selection of Unique Rugs through our Pom Pom Box or Sample Box, that exemplify our unparalleled craftsmanship. (request it here and a link to the contact form)</p>
-                <div class="button-div col-ld-3 col-d-4 col-t-3 col-3">
+                <div class="button-div col-ld-3 col-d-4 col-t-7 col-7">
                     <a href="#" class="button button-black">Ir para Contact us</a>
                 </div>
             </div>

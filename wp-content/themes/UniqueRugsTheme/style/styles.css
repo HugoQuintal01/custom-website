@@ -643,7 +643,7 @@ h1, .h1, h2, .h2 {
 }
 
 body {
-  background: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/background-light.jpg"), lightgray 50%/cover no-repeat;
+  background: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light.jpg"), lightgray 50%/cover no-repeat;
   mix-blend-mode: multiply;
 }
 
@@ -669,7 +669,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  background-image: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
@@ -769,7 +769,7 @@ body {
   font-size: 48px;
   line-height: 57.6px;
   font-weight: 500;
-  color: #212121;
+  color: #051C2C;
 }
 .unique-rugs-homepage .unique-rugs-homepage-content p {
   text-align: center;
@@ -777,11 +777,12 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
-  color: #212121;
+  color: #051C2C;
 }
 .unique-rugs-homepage .unique-rugs-homepage-content a {
   text-align: center;
   margin-top: 40px;
+  color: #051C2C;
 }
 
 .button {
@@ -829,7 +830,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  background-image: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/own-collection.jpg");
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/own-collection.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -890,7 +891,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/background-carpets.jpg");
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/background-carpets.jpg");
   background-size: cover;
   mix-blend-mode: multiply;
   z-index: 2;
@@ -902,7 +903,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/background-light-blue.jpg"), lightgray 50%/cover no-repeat;
+  background: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light-blue.jpg"), lightgray 50%/cover no-repeat;
   mix-blend-mode: hard-light;
   z-index: 1;
   opacity: 0.3;
@@ -1177,6 +1178,9 @@ body {
   border: 0 solid rgba(0, 0, 0, 0);
   padding: 0 10px;
 }
+.footer .footer-top-section .footer-div-left .social-icons-mobile {
+  display: none;
+}
 .footer .footer-top-section .footer-div-center {
   display: flex;
   justify-content: flex-start;
@@ -1251,5 +1255,178 @@ body {
   }
   body .work-with-us-homepage .work-with-us-homepage-text p {
     text-align: center;
+  }
+  body .menu {
+    padding: 20px;
+  }
+  body .menu .pages {
+    display: none;
+  }
+  body .cover-transition img {
+    max-width: 300px;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left {
+    left: 20px;
+    max-width: 220px;
+    top: 40px;
+    padding: 0;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right {
+    max-width: 150px;
+    padding: 0;
+    right: 20px;
+    bottom: -100px;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-bottom-left {
+    max-width: 150px;
+    left: 20px;
+    padding: 0;
+    bottom: 80px;
+  }
+  body .unique-rugs-homepage {
+    padding: 150px 20px;
+    margin-top: 20px;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-content {
+    padding: 0;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-content div {
+    padding: 0;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-content h2, body .unique-rugs-homepage .unique-rugs-homepage-content p, body .unique-rugs-homepage .unique-rugs-homepage-content a {
+    padding: 0;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-content h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-content p {
+    margin-top: 20px;
+  }
+  body .own-collection-homepage {
+    padding: 60px 0 0 0;
+    margin-top: 265px;
+    overflow: hidden;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section {
+    padding: 0 10px;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section .top-section-left-div h3 {
+    font-size: 48px;
+    line-height: 48px;
+    margin: 0;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section .top-section-left-div p {
+    margin: 0;
+    margin-top: 20px;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section .top-section-left-div p:first-of-type {
+    margin-top: 40px;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section .top-section-left-div .button-div {
+    margin-top: 75px;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section .top-section-right-div {
+    margin-top: 0;
+  }
+  body .own-collection-homepage .own-collection-homepage-top-section .top-section-right-div img {
+    max-width: 200px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section {
+    padding: 350px 10px 100px 10px;
+    flex-wrap: wrap;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay {
+    top: 140px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay-background {
+    top: 140px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div {
+    padding: 0;
+    margin-top: 90px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .bottom-section-left-div-title-section {
+    margin-bottom: 60px;
+    padding: 0;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .bottom-section-left-div-title-section span {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .bottom-section-left-div-title-section h4 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .card-content .card-content-text span {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .card-content .card-content-text p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .button-div {
+    margin-top: 60px;
+  }
+  body .unique-samples-homepage {
+    padding-bottom: 200px;
+  }
+  body .unique-samples-homepage .unique-samples-top-section {
+    display: none;
+  }
+  body .unique-samples-homepage .unique-samples-bottom-section {
+    flex-direction: column-reverse;
+    padding: 0 10px;
+  }
+  body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div {
+    max-height: 300px;
+    height: 250px;
+    margin-top: 150px;
+  }
+  body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div .image-individual {
+    max-width: 200px;
+  }
+  body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div .image-group {
+    top: -30px;
+  }
+  body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div h3 {
+    font-size: 32px;
+    line-height: 42px;
+    margin-top: 40px;
+  }
+  body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div p {
+    margin-top: 20px;
+  }
+  body .footer {
+    padding: 20px 10px;
+  }
+  body .footer .footer-top-section {
+    flex-wrap: wrap;
+  }
+  body .footer .footer-top-section .footer-div-left h5 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  body .footer .footer-top-section .footer-div-left .social-icons-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  body .footer .footer-top-section .footer-div-left .social-icons-mobile a {
+    margin: 0 20px;
+  }
+  body .footer .footer-top-section .footer-div-center {
+    margin-top: 40px;
+    padding: 0;
+  }
+  body .footer .footer-top-section .footer-div-center a {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body .footer .footer-middle-section {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */
