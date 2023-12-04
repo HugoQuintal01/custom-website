@@ -1255,6 +1255,16 @@ body {
   }
   body .work-with-us-homepage .work-with-us-homepage-text p {
     text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  body .work-with-us-homepage .work-with-us-homepage-text .author {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  body .work-with-us-homepage .work-with-us-homepage-text .author-position {
+    font-size: 12px;
+    line-height: 18px;
   }
   body .menu {
     padding: 20px;
@@ -1284,7 +1294,7 @@ body {
     bottom: 80px;
   }
   body .unique-rugs-homepage {
-    padding: 150px 20px;
+    padding: 240px 20px;
     margin-top: 20px;
   }
   body .unique-rugs-homepage .unique-rugs-homepage-content {
