@@ -1,3 +1,25 @@
+body{
+    background: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light.jpg'), lightgray 50% / cover no-repeat;
+    mix-blend-mode: multiply;
+}
+
+.cover-transition{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $lightGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    transition-duration: $animationtime;
+
+    img{
+        object-fit: contain;
+        max-width: 500px;
+    }
+}
+
 .banner-homepage{
     display: flex;
     justify-content: flex-start;
@@ -26,6 +48,21 @@
             line-height: 32px;
             margin-top: 40px;
         }
+
+        .arrow-fixed {
+            position: absolute;
+            right: 50px;
+            animation: moveUpDown 2s ease-in-out infinite; /* Adjust the duration and timing function as needed */
+        }
+        
+        @keyframes moveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-40px); /* Adjust the distance of the movement */
+            }
+        }
     }
 }
 
@@ -34,6 +71,7 @@
     justify-content: center;
     align-items: center;
     padding: 150px 50px;
+    position: relative;
 
     .work-with-us-homepage-image{
         display: flex;
@@ -77,7 +115,7 @@
 
         &.unique-rugs-homepage-image-top-left{
             top: 50px;
-            left: 100px;
+            left: 150px;
         }
 
         &.unique-rugs-homepage-image-right{
@@ -86,7 +124,7 @@
 
         &.unique-rugs-homepage-image-bottom-left{
             bottom: 50px;
-            left: 10%;
+            left: 13%;
         }
     }
 
@@ -158,12 +196,231 @@
         content: '';
         width: 100%;
         height: 1px;
-        bottom: 0;
+        bottom: 5px;
         position: absolute;
         transition-duration: $animationtime;
     }
 
     &:hover::after{
         width: 30%;
+    }
+}
+
+.own-collection-homepage{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-image: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/own-collection.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 0 0;
+    margin-top: 150px;
+
+    .own-collection-homepage-top-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        min-height: 100vh;
+        position: relative;
+        padding: 0 100px;
+
+        .top-section-left-div{
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            height: 100%;
+
+            h3{
+                font-size: 80px;
+                font-weight: 300;
+                line-height: 80px;
+                margin-bottom: 40px;
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                margin-top: 20px;
+                margin-right: 50px;
+            }
+
+            .button-div{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-top: 100px;
+            }
+        }
+
+        .top-section-right-div{
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            height: 100%;
+            margin-top: 220px;
+            z-index: 3;
+        }
+    }
+
+    .own-collection-homepage-bottom-section{
+        position: relative;
+        margin-top: -400px;
+        padding: 350px 100px 100px 100px;
+        display: flex;
+
+        .own-collection-homepage-overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-image: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/background-carpets.jpg');
+            background-size: cover;
+            mix-blend-mode: multiply;
+            z-index: 2;
+            opacity: .9;
+        }
+
+        .own-collection-homepage-overlay-background{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light-blue.jpg'), lightgray 50% / cover no-repeat;
+            mix-blend-mode: hard-light;
+            z-index: 1;
+            opacity: .3;
+        }
+
+
+        .bottom-section-left-div{
+            z-index: 2;
+            position: relative;
+
+            .bottom-section-left-div-title-section{
+                margin-bottom: 40px;
+
+                span{
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+
+                h4{
+                    font-size: 40px;
+                    font-weight: 500;
+                    line-height: 48px;
+                    color: $lightGray;
+                    margin-top: 5px;
+                }
+            }
+
+            .card-content{
+                margin-top: 30px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+
+                span{
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: $lightGray;
+                    font-weight: 500;
+                }
+
+                p{
+                    margin-top: 5px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    padding: 0;
+                }
+            }
+
+            .button-div{
+                margin-top: 100px;
+            }
+        }
+        
+    }
+}
+
+.unique-samples-homepage{
+    position: relative;
+    //padding: 150px 100px;
+
+    .unique-samples-top-section{
+        background-color: $lightGray;
+        opacity: .3;
+        padding: 200px 0;
+    }
+
+    .unique-samples-bottom-section{
+        display: flex;
+        padding: 0 100px;
+        padding-bottom: 150px;
+
+        .unique-samples-left-div{
+            display: flex;
+            justify-content: flex-start;
+            align-content: flex-end;
+            flex-wrap: wrap;
+            padding-top: 20px;
+
+            h3{
+                font-size: 48px;
+                line-height: 58px;
+                font-weight: 500;
+                color: $primary;
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                color: $primary;
+                margin-top: 40px;
+            }
+
+            .button-div{
+                margin-top: 40px;
+
+                a{
+                    color: $primary;
+
+                    &::after{
+                        background-color: $primary;
+                    }
+                }
+            }
+        }
+
+        .unique-samples-right-div{
+            position: relative;
+            max-height: 599px;
+            height: 490px;
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            margin-top: -270px;
+
+            img{
+                position: absolute;
+            }
+
+            .image-group{
+                top: 0;
+            }
+
+            .image-individual{
+                bottom: 0;
+            }
+        }
     }
 }

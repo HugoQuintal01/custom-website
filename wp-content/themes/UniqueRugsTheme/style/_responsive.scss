@@ -1,0 +1,94 @@
+// Large Desktop
+@media only screen and (min-width: 1920px) {
+    // Your styles for large desktop here
+  }
+  
+  // Desktop
+  @media only screen and (min-width: 1600px) and (max-width: 1920px) {
+    // Your styles for desktop here
+  }
+  
+  // Laptop
+  @media only screen and (min-width: 1150px) and (max-width: 1600px) {
+    
+    body .own-collection-homepage .own-collection-homepage-bottom-section{
+      margin-top: -350px;
+      padding: 300px 100px 100px 100px;
+    }
+
+    body .banner-homepage .titles-banner-homepage{
+      padding: 0 50px 70px;
+    }
+
+    body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .button-div{
+      min-width: 230px;
+    }
+
+    body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right{
+      right: 13%;
+    }
+
+    body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left{
+      left: 100px;
+    }
+
+  }
+  
+  // Tablet Horizontal
+  @media only screen and (min-width: 800px) and (max-width: 1150px) {
+    // Your styles for tablet horizontal here
+  }
+  
+  // Tablet
+  @media only screen and (min-width: 480px) and (max-width: 800px) {
+    // Your styles for tablet here
+  }
+  
+  // Mobile
+  @media only screen and (max-width: 479px) {
+    
+    body .banner-homepage{
+        align-items: flex-start;
+        padding: 100px 0;
+
+        .titles-banner-homepage{
+            padding: 0 10px;
+
+            h1{
+                font-size: 48px;
+                line-height: 48px;
+            }
+
+            span{
+                font-size: 20px;
+                line-height: 28px;
+                margin-top: 25px;
+            }
+
+            .arrow-fixed{
+              right: 49%;
+              bottom: 50px;
+            }
+        }
+    }
+
+    body .work-with-us-homepage{
+        padding: 100px 0;
+
+        .work-with-us-homepage-image{
+            padding: 0 50px;
+        }
+
+        .work-with-us-homepage-text{
+            padding: 0 10px;
+            margin-top: 30px;
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+
+  }
+  

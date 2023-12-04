@@ -642,12 +642,34 @@ h1, .h1, h2, .h2 {
   padding: 0;
 }
 
+body {
+  background: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light.jpg"), lightgray 50%/cover no-repeat;
+  mix-blend-mode: multiply;
+}
+
+.cover-transition {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #BBBBBB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  transition-duration: 0.3s;
+}
+.cover-transition img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 500px;
+}
+
 .banner-homepage {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   min-height: 100vh;
-  background-image: url("https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/banner.jpg");
   background-repeat: no-repeat;
   background-position: center 30%;
   background-size: cover;
@@ -669,12 +691,26 @@ h1, .h1, h2, .h2 {
   line-height: 32px;
   margin-top: 40px;
 }
+.banner-homepage .titles-banner-homepage .arrow-fixed {
+  position: absolute;
+  right: 50px;
+  animation: moveUpDown 2s ease-in-out infinite; /* Adjust the duration and timing function as needed */
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-40px); /* Adjust the distance of the movement */
+  }
+}
 
 .work-with-us-homepage {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 150px 50px;
+  position: relative;
 }
 .work-with-us-homepage .work-with-us-homepage-image {
   display: flex;
@@ -713,14 +749,14 @@ h1, .h1, h2, .h2 {
 }
 .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left {
   top: 50px;
-  left: 100px;
+  left: 150px;
 }
 .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right {
   right: 17%;
 }
 .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-bottom-left {
   bottom: 50px;
-  left: 10%;
+  left: 13%;
 }
 .unique-rugs-homepage .unique-rugs-homepage-content {
   display: flex;
@@ -780,10 +816,440 @@ h1, .h1, h2, .h2 {
   content: "";
   width: 100%;
   height: 1px;
-  bottom: 0;
+  bottom: 5px;
   position: absolute;
   transition-duration: 0.3s;
 }
 .button:hover::after {
   width: 30%;
+}
+
+.own-collection-homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/own-collection.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0 0 0;
+  margin-top: 150px;
+}
+.own-collection-homepage .own-collection-homepage-top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  position: relative;
+  padding: 0 100px;
+}
+.own-collection-homepage .own-collection-homepage-top-section .top-section-left-div {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.own-collection-homepage .own-collection-homepage-top-section .top-section-left-div h3 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-bottom: 40px;
+}
+.own-collection-homepage .own-collection-homepage-top-section .top-section-left-div p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.own-collection-homepage .own-collection-homepage-top-section .top-section-left-div .button-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+.own-collection-homepage .own-collection-homepage-top-section .top-section-right-div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  margin-top: 220px;
+  z-index: 3;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section {
+  position: relative;
+  margin-top: -400px;
+  padding: 350px 100px 100px 100px;
+  display: flex;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/background-carpets.jpg");
+  background-size: cover;
+  mix-blend-mode: multiply;
+  z-index: 2;
+  opacity: 0.9;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light-blue.jpg"), lightgray 50%/cover no-repeat;
+  mix-blend-mode: hard-light;
+  z-index: 1;
+  opacity: 0.3;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div {
+  z-index: 2;
+  position: relative;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .bottom-section-left-div-title-section {
+  margin-bottom: 40px;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .bottom-section-left-div-title-section span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .bottom-section-left-div-title-section h4 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #BBBBBB;
+  margin-top: 5px;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .card-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .card-content span {
+  font-size: 20px;
+  line-height: 29px;
+  color: #BBBBBB;
+  font-weight: 500;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .card-content p {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0;
+}
+.own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .button-div {
+  margin-top: 100px;
+}
+
+.unique-samples-homepage {
+  position: relative;
+}
+.unique-samples-homepage .unique-samples-top-section {
+  background-color: #BBBBBB;
+  opacity: 0.3;
+  padding: 200px 0;
+}
+.unique-samples-homepage .unique-samples-bottom-section {
+  display: flex;
+  padding: 0 100px;
+  padding-bottom: 150px;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div h3 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 500;
+  color: #051C2C;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #051C2C;
+  margin-top: 40px;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div .button-div {
+  margin-top: 40px;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div .button-div a {
+  color: #051C2C;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div .button-div a::after {
+  background-color: #051C2C;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div {
+  position: relative;
+  max-height: 599px;
+  height: 490px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  margin-top: -270px;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div img {
+  position: absolute;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div .image-group {
+  top: 0;
+}
+.unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div .image-individual {
+  bottom: 0;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  padding: 30px 75px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.menu .logo-website {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+}
+.menu .pages {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  padding: 0;
+}
+.menu .pages a {
+  position: relative;
+  margin: 0 25px;
+  font-size: 13px;
+  line-height: 150%;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+.menu .pages a:hover {
+  color: #FFFFFF;
+}
+.menu .pages a:hover::after {
+  width: 40%;
+  opacity: 1;
+}
+.menu .pages a::after {
+  content: "";
+  width: 120%;
+  height: 1px;
+  background-color: #FFFFFF;
+  position: absolute;
+  bottom: -3px;
+  transition-duration: 0.3s;
+  opacity: 0;
+}
+.menu .pages .language {
+  margin-left: 60px;
+}
+.menu .menu-hamburger {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+.menu .menu-hamburger .line {
+  position: relative;
+  height: 2px;
+  background-color: #FFFFFF;
+  width: 15px;
+  transition-duration: 0.3s;
+}
+.menu .menu-hamburger .line::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #FFFFFF;
+  width: 30px;
+  top: -7px;
+  right: 0;
+  transition-duration: 0.3s;
+}
+.menu .menu-hamburger .line::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #FFFFFF;
+  width: 23px;
+  bottom: -7px;
+  right: 0;
+  transition-duration: 0.3s;
+}
+.menu .menu-hamburger:hover .line {
+  width: 30px;
+}
+.menu .menu-hamburger:hover .line::after {
+  width: 30px;
+}
+.menu .menu-hamburger:hover .line::before {
+  width: 30px;
+}
+
+.footer {
+  display: flex;
+  padding: 30px 75px;
+}
+.footer .footer-top-section {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-top-section .footer-div-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.footer .footer-top-section .footer-div-left h5 {
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #051C2C;
+  padding: 0;
+}
+.footer .footer-top-section .footer-div-left .input-newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+  border-bottom: 1px solid #5E8AAA;
+  padding: 5px;
+}
+.footer .footer-top-section .footer-div-left .input-newsletter input {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #5E8AAA;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid rgba(0, 0, 0, 0);
+  padding: 5px;
+}
+.footer .footer-top-section .footer-div-left .input-newsletter input::-moz-placeholder {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #5E8AAA;
+}
+.footer .footer-top-section .footer-div-left .input-newsletter input::placeholder {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+  color: #5E8AAA;
+}
+.footer .footer-top-section .footer-div-left .input-newsletter button {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #051C2C;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid rgba(0, 0, 0, 0);
+  padding: 0 10px;
+}
+.footer .footer-top-section .footer-div-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.footer .footer-top-section .footer-div-center a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #051C2C;
+  text-decoration: none;
+  margin: 15px 0;
+}
+.footer .footer-middle-section {
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #BBBBBB;
+}
+.footer .footer-middle-section .social-icons a {
+  margin: 0 10px;
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1600px) {
+  body .own-collection-homepage .own-collection-homepage-bottom-section {
+    margin-top: -350px;
+    padding: 300px 100px 100px 100px;
+  }
+  body .banner-homepage .titles-banner-homepage {
+    padding: 0 50px 70px;
+  }
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-left-div .button-div {
+    min-width: 230px;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right {
+    right: 13%;
+  }
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left {
+    left: 100px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  body .banner-homepage {
+    align-items: flex-start;
+    padding: 100px 0;
+  }
+  body .banner-homepage .titles-banner-homepage {
+    padding: 0 10px;
+  }
+  body .banner-homepage .titles-banner-homepage h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  body .banner-homepage .titles-banner-homepage span {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 25px;
+  }
+  body .banner-homepage .titles-banner-homepage .arrow-fixed {
+    right: 49%;
+    bottom: 50px;
+  }
+  body .work-with-us-homepage {
+    padding: 100px 0;
+  }
+  body .work-with-us-homepage .work-with-us-homepage-image {
+    padding: 0 50px;
+  }
+  body .work-with-us-homepage .work-with-us-homepage-text {
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+  body .work-with-us-homepage .work-with-us-homepage-text p {
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
