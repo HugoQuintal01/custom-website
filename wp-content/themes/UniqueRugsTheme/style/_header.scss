@@ -43,7 +43,7 @@
                 color: $white;
 
                 &::after{
-                    width: 40%;
+                    width: 100%;
                     opacity: 1;
                 }
             }
@@ -120,4 +120,115 @@
         }
         
     }
+}
+
+.menu-open{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: -100vh;
+    background-color: $primary;
+    z-index: 5;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: top 1s ease;
+
+    .close-button{
+        position: absolute;
+        right: 90px;
+        top: 30px;
+        cursor: pointer;
+        transition-duration: $animationtime;
+
+        span{
+            font-size: 26px;
+            font-weight: 300;
+            transition-duration: $animationtime;
+        }
+
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+
+    .menu-item{
+        display: flex;
+        justify-content: center;
+
+        a{
+            color: $white;
+            font-size: 32px;
+            text-decoration: none;
+            margin: 30px 0;
+            text-align: center;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            font-weight: 500;
+    
+            &::after{
+                content: '';
+                height: 1px;
+                width: 100%;
+                position: absolute;
+                bottom: -10px;
+                background-color: $white;
+                opacity: 0;
+                transition-duration: $animationtime;
+            }
+    
+            &:hover::after{
+                opacity: 1;
+            }
+        }
+    }
+
+    .fixed-items{
+
+        .menu-fixed-image-01{
+            position: absolute;
+            right: -20%;
+            top: 13%;
+            transition-duration: $animationtime;
+            transition: right 0.5s ease;
+        }
+
+        .menu-fixed-image-02{
+            position: absolute;
+            right: 20%;
+            top: -60%;
+            transition-duration: $animationtime;
+            transition: top 1s ease;
+        }
+
+        .menu-fixed-image-03{
+            position: absolute;
+            right: 20%;
+            top: -60%;
+            transition-duration: $animationtime;
+            transition: top 1.3s ease;
+        }
+
+        .menu-fixed-image-04{
+            position: absolute;
+            right: -20%;
+            top: 10%;
+            transition-duration: $animationtime;
+            transition: right 1.4s ease;
+            transform: rotate(90deg);
+        }
+
+        .menu-fixed-image-05{
+            position: absolute;
+            right: 20%;
+            top: -60%;
+            transition-duration: $animationtime;
+            transition: top 1.5s ease;
+        }
+    }
+
+    
 }

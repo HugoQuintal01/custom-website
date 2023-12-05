@@ -10,7 +10,10 @@ Template Name: Custom Homepage
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?> <!-- Add this line to include WordPress head elements -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style/styles.css">
-
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style/css-glide/glide.core.min.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style/css-glide/glide.theme.min.css">
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/style/css-glide/glide.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/style/css-glide/glide.modular.esm.min.js"></script>
     <title>Homepage</title>
 </head>
 <body <?php body_class(); ?>> <!-- Add this line to include body classes -->
@@ -107,7 +110,26 @@ Template Name: Custom Homepage
             </div>
             <div class="bottom-section-right-div col-ld-6 col-d-6 col-t-12 col-12">
                 <div class="slider">
-                    
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/slider-items-01.png" alt="">
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/slider-items-02.png" alt="">
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/slider-items-01.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,5 +154,20 @@ Template Name: Custom Homepage
     
     <?php get_footer(); ?>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script>
+        // Slider Animation
+        const config = {
+            type: 'carousel',
+            perView: 2,
+            breakpoinst: {
+                800: {
+                    perView: 1
+                }
+            }
+        };
+        new Glide(".glide", config).mount();
+    </script>
 </body>
 </html>

@@ -342,5 +342,74 @@
       }
     }
 
+    body .fixed-items{
+      display: none;
+    }
+
+    body .menu-open .close-button{
+      right: 40px;
+    }
+
+    body .footer .footer-bottom-section .footer-bottom-left-section{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+
+      span{
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    body .footer .footer-bottom-section{
+      position: relative;
+      margin-top: 20px;
+
+      &::after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        background-color: $gray;
+      }
+    }
+
+    body .footer .footer-bottom-section .footer-bottom-right-section a{
+      margin-left: 0 !important;
+      margin: 0 10px;
+    }
+
+    body .footer .footer-bottom-section .footer-bottom-right-section{
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide img{
+      height: 300px;
+      width: 300px !important;
+    }
+
+    body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active img{
+      height: 400px;
+      width: 300px !important;
+      z-index: 2;
+    }
+
+    body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider{
+      margin-left: -60px;
+    }
+
+    body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__bullets{
+      left: 29%;
+      bottom: 100px;
+    }
+
+    body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active + .glide__slide{
+      margin-left: -160px !important;
+      z-index: 1;
+    }
+
   }
   

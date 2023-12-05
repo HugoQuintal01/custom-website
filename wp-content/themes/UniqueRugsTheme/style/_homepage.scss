@@ -1,6 +1,7 @@
 body{
     background: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/background-light.jpg'), lightgray 50% / cover no-repeat;
     mix-blend-mode: multiply;
+    scroll-behavior: smooth;
 }
 
 .cover-transition{
@@ -346,6 +347,78 @@ body{
 
             .button-div{
                 margin-top: 100px;
+            }
+        }
+
+        .bottom-section-right-div{
+            display: flex;
+            align-content: flex-end;
+            justify-content: flex-start;
+            z-index: 3;
+
+            .slider{
+                display: flex;
+                justify-content: flex-start;
+                position: relative;
+                margin-left: -100px;
+
+                .glide{
+                    width: 800px;
+                    position: relative;
+
+                    .glide__track{
+                        height: 600px;
+                        position: relative;
+
+                        .glide__slides{
+                            height: 600px;
+
+                            .glide__slide{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 500px;
+                                position: relative;
+
+                                img{
+                                    height: 400px;
+                                }
+                            }
+
+                            .glide__slide--active{
+                                height: 500px;
+
+                                img{
+                                    height: 500px;
+                                    width: 360px !important;
+                                }
+
+                                & + .glide__slide{
+                                    margin-left: -100px !important;
+                                    margin-right: 100px !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .glide__bullets{
+                        left: 65px;
+                        bottom: 120px;
+
+                        .glide__bullet{
+                            background-color: $lightBlue;
+                            border: none;
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        .glide__bullet--active{
+                            background-color: $blue;
+                            width: 42px;
+                            border-radius: 10px;
+                        }
+                    }
+                }
             }
         }
         

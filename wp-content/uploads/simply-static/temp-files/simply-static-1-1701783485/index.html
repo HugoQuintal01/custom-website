@@ -46,7 +46,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 <link rel="alternate" type="text/xml+oembed" href="https://hugoquintal01.github.io/uniquerugs/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhugoquintal01.github.io%2Funiquerugs%2F#038;format=xml">
  <!-- Add this line to include WordPress head elements -->
     <link rel="stylesheet" href="https://hugoquintal01.github.io/uniquerugs/wp-content/themes/UniqueRugsTheme/style/styles.css">
-
+    <link rel="stylesheet" href="https://hugoquintal01.github.io/uniquerugs/wp-content/themes/UniqueRugsTheme/style/css-glide/glide.core.min.css">
+    <link rel="stylesheet" href="https://hugoquintal01.github.io/uniquerugs/wp-content/themes/UniqueRugsTheme/style/css-glide/glide.theme.min.css">
+    <script src="https://hugoquintal01.github.io/uniquerugs/wp-content/themes/UniqueRugsTheme/style/css-glide/glide.min.js"></script>
+    <script src="https://hugoquintal01.github.io/uniquerugs/wp-content/themes/UniqueRugsTheme/style/css-glide/glide.modular.esm.min.js"></script>
     <title>Homepage</title>
 </head>
 <body class="home page-template page-template-homepage page-template-homepage-php page page-id-6 wp-embed-responsive no-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover full-width-content"> <!-- Add this line to include body classes -->
@@ -83,16 +86,36 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
         <a href="#">CONTACT</a>
         <a class="language" href="#">EN</a>
     </div>
-    <div class="menu-hamburger col-ld-1 col-d-1 col-t-6 col-6">
+    <div id="open-menu-button" class="menu-hamburger col-ld-1 col-d-1 col-t-6 col-6">
         <div class="line"></div>
     </div>
 </section>
 <section class="menu-open gridrowfull col-ld-12 col-d-12 col-t-12 col-12">
-    <a href="#">About Us</a>
-    <a href="#">Work with us</a>
-    <a href="#">About Us</a>
-    <a href="#">About Us</a>
-    <a href="#">About Us</a>
+    <div class="menu-item col-ld-12 col-d-12 col-t-12 col-12">
+        <a id="menu-item-01" href="#">About us</a>
+    </div>
+    <div class="menu-item col-ld-12 col-d-12 col-t-12 col-12">
+        <a id="menu-item-02" href="#">Work with us</a>
+    </div>
+    <div class="menu-item col-ld-12 col-d-12 col-t-12 col-12">
+        <a id="menu-item-03" href="#">Full service</a>
+    </div>
+    <div class="menu-item col-ld-12 col-d-12 col-t-12 col-12">
+        <a id="menu-item-04" href="#">Production capacity</a>
+    </div>
+    <div class="menu-item col-ld-12 col-d-12 col-t-12 col-12">
+        <a id="menu-item-05" href="#">Contact</a>
+    </div>
+    <div id="close-menu-button" class="close-button">
+        <span>X</span>
+    </div>
+    <div class="fixed-items">
+        <img id="menu-fixed-image-01" class="menu-fixed-image-01" src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/unique-rugs-02.jpg" alt="unique-rugs-fixed-01">
+        <img id="menu-fixed-image-02" class="menu-fixed-image-02" src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/unique-rugs-02.jpg" alt="unique-rugs-fixed-01">
+        <img id="menu-fixed-image-03" class="menu-fixed-image-03" src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/unique-rugs-02.jpg" alt="unique-rugs-fixed-01">
+        <img id="menu-fixed-image-04" class="menu-fixed-image-04" src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/unique-rugs-02.jpg" alt="unique-rugs-fixed-01">
+        <img id="menu-fixed-image-05" class="menu-fixed-image-05" src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/unique-rugs-02.jpg" alt="unique-rugs-fixed-01">
+    </div>
 </section>
 
     <section id="cover-transition-id" class="cover-transition">
@@ -186,7 +209,26 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
             </div>
             <div class="bottom-section-right-div col-ld-6 col-d-6 col-t-12 col-12">
                 <div class="slider">
-                    
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <img src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/slider-items-01.png" alt="">
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/slider-items-02.png" alt="">
+                                </li>
+                                <li class="glide__slide">
+                                    <img src="https://hugoquintal01.github.io/uniquerugs/wp-content/uploads/2023/12/slider-items-01.png" alt="">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <button class="glide__bullet" data-glide-dir="=0"></button>
+                            <button class="glide__bullet" data-glide-dir="=1"></button>
+                            <button class="glide__bullet" data-glide-dir="=2"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -230,14 +272,26 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
         </div>
         </div>
         <div class="footer-div-center col-ld-3 col-d-3 col-t-6 col-6">
-            <a class="col-ld-12 col-d-12 col-t-12 col-12" href="#">About Us</a>
-            <a class="col-ld-12 col-d-12 col-t-12 col-12" href="#">Full service</a>
-            <a class="col-ld-12 col-d-12 col-t-12 col-12" href="#">Production capacity</a>
+            <div class="col-ld-12 col-d-12 col-t-12 col-12 footer-item">
+                <a href="#">About Us</a>
+            </div>    
+            <div class="col-ld-12 col-d-12 col-t-12 col-12 footer-item">
+                <a href="#">Full service</a>
+            </div>
+            <div class="col-ld-12 col-d-12 col-t-12 col-12 footer-item">
+                <a href="#">Production capacity</a>
+            </div>
         </div>
         <div class="footer-div-center footer-div-right col-ld-2 col-d-2 col-t-6 col-6">
-            <a class="col-ld-12 col-d-12 col-t-12 col-12" href="#">Why work with us</a>
-            <a class="col-ld-12 col-d-12 col-t-12 col-12" href="#">Contact</a>
-            <a class="col-ld-12 col-d-12 col-t-12 col-12" href="#">FAQ</a>
+            <div class="col-ld-12 col-d-12 col-t-12 col-12 footer-item">
+                <a href="#">Why work with us</a>
+            </div>
+            <div class="col-ld-12 col-d-12 col-t-12 col-12 footer-item">
+                <a href="#">Contact</a>
+            </div>
+            <div class="col-ld-12 col-d-12 col-t-12 col-12 footer-item">
+                <a href="#">FAQ</a>
+            </div>
         </div>
     </div>
     <div class="footer-middle-section col-ld-12 col-d-12 col-t-12 col-12">
@@ -253,6 +307,16 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
             </a>
         </div>
     </div>
+    <div class="footer-bottom-section col-ld-12 col-d-12 col-t-12 col-12">
+        <div class="footer-bottom-left-section col-ld-6 col-d-6 col-t-12 col-12">
+            <span>© Unique Rugs 2023 - All Rights are Reserved</span>
+        </div>
+        <div class="footer-bottom-right-section col-ld-6 col-d-6 col-t-12 col-12">
+            <a href="#">Terms of service</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Cookies</a>
+        </div>
+    </div>
 </section>
 <script id="generate-a11y">!function(){"use strict";if("querySelector"in document&&"addEventListener"in window){var e=document.body;e.addEventListener("mousedown",function(){e.classList.add("using-mouse")}),e.addEventListener("keydown",function(){e.classList.remove("using-mouse")})}}();</script><!--[if lte IE 11]>
 <script src="http://localhost/uniquerugs/wp-content/themes/generatepress/assets/js/classList.min.js?ver=3.3.1" id="generate-classlist-js"></script>
@@ -263,6 +327,19 @@ var generatepressMenu = {"toggleOpenedSubMenus":"1","openSubMenuLabel":"Open Sub
 
 
     <script src="https://hugoquintal01.github.io/uniquerugs/wp-content/themes/UniqueRugsTheme/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/@glidejs/glide"></script>
+    <script>// Slider Animation
+        const config = {
+            type: 'carousel',
+            perView: 2,
+            breakpoinst: {
+                800: {
+                    perView: 1
+                }
+            }
+        };
+        new Glide(".glide", config).mount();</script>
 
 </body>
 </html>

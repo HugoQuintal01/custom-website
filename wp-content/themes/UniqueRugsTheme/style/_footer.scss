@@ -54,7 +54,11 @@
                     background-color: $transparent;
                     border: 0 solid $transparent;
                     padding: 0 10px;
+                    transition-duration: $animationtime;
                     
+                    &:hover{
+                        color: $blue;
+                    }
                 }
             }
 
@@ -69,14 +73,45 @@
             align-items: flex-start;
             flex-wrap: wrap;
 
-            a{
-                font-size: 16px;
-                line-height: 24px;
-                font-weight: 500;
-                color: $primary;
-                text-decoration: none;
+            .footer-item{
+                display: flex;
+                justify-content: flex-start;
                 margin: 15px 0;
+
+                a{
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 500;
+                    color: $primary;
+                    text-decoration: none;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    transition-duration: $animationtime;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -5px;
+                        background-color: $blue;
+                        height: 1px;
+                        width: 0;
+                        opacity: 0;
+                        transition-duration: $animationtime;
+                    }
+
+                    &:hover{
+                        color: $blue;
+                    }
+
+                    &:hover::after{
+                        opacity: 1;
+                        width: 120%;
+                    }
+                }
             }
+
+            
         }
     }
 
@@ -89,6 +124,64 @@
 
             a{
                 margin: 0 10px;
+            }
+        }
+    }
+
+    .footer-bottom-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .footer-bottom-left-section{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            span{
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 19.5px;
+                color: $gray;
+            }
+        }
+
+        .footer-bottom-right-section{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            a{
+                font-size: 13px;
+                font-weight: 500;
+                line-height: 19.5px;
+                color: $gray;
+                margin-left: 50px;
+                text-decoration: none;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                transition-duration: $animationtime;
+
+                &::after{
+                    content: '';
+                    position: absolute;
+                    justify-content: center;
+                    background-color: $gray;
+                    bottom: 0;
+                    height: 1px;
+                    width: 100%;
+                    transition-duration: $animationtime;
+                }
+
+                &:hover{
+                    color: $blue;
+
+                    &::after{
+                        background-color: $blue;
+                    }
+                }
             }
         }
     }
