@@ -169,6 +169,7 @@ body{
     transition-duration: $animationtime;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 
     &.button-black{
         color: $black;
@@ -494,6 +495,144 @@ body{
 
             .image-individual{
                 bottom: 0;
+            }
+        }
+    }
+}
+
+.contact-us-popup{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #00000080;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    .contact-us-popup-inner{
+        height: 80%;
+        position: relative;
+        background-color: $white;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 0;
+
+        .close-button{
+            position: absolute;
+            right: 40px;
+            top: 30px;
+            cursor: pointer;
+            transition-duration: $animationtime;
+            
+    
+            span{
+                font-size: 26px;
+                font-weight: 300;
+                transition-duration: $animationtime;
+                color: $primary;
+            }
+    
+            &:hover{
+                transform: scale(1.4);
+            }
+        }
+
+        .contact-us-popup-inner-left{
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            flex-wrap: wrap;
+            height: 100%;
+            background-image: url('http://localhost/uniquerugs/wp-content/uploads/2023/12/background-carpets.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 50px;
+            box-sizing: border-box;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+            h3{
+                font-size: 42px;
+                font-weight: 500;
+                color: $white;
+                padding: 0;
+            }
+
+            #user-name{
+                margin-left: 7px;
+                text-decoration: underline;
+                text-underline-offset: 8px;
+                text-decoration-thickness: 2px;
+            }
+        }
+
+        .contact-us-popup-inner-right{
+            background-color: $white;
+            height: 100%;
+            padding: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-content: center;
+            flex-wrap: wrap;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+                color: $primary;
+            }
+
+            input{
+                background-color: $transparent;
+                border: none;
+                border-bottom: 1px solid $primary;
+                border-radius: 0;
+                font-size: 18px;
+                color: $primary;
+                margin: 20px 10px 0 0;
+                width: calc(50% - 20px);
+
+                &::placeholder{
+                    font-size: 18px;
+                    color: $primary;
+                }
+            }
+
+            textarea{
+                background-color: $transparent;
+                border: none;
+                border-bottom: 1px solid $primary;
+                border-radius: 0;
+                font-size: 18px;
+                color: $primary;
+                margin: 20px 10px 0 0;
+
+                &::placeholder{
+                    font-size: 18px;
+                    color: $primary;
+                }
+            }
+
+            .button{
+                margin-top: 20px;
+                color: $primary;
+
+                &::after{
+                    background-color: $primary;
+                }
             }
         }
     }

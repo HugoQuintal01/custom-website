@@ -32,6 +32,8 @@
       left: 100px;
     }
 
+
+
   }
   
   // Tablet Horizontal
@@ -41,7 +43,371 @@
   
   // Tablet
   @media only screen and (min-width: 480px) and (max-width: 800px) {
-    // Your styles for tablet here
+    
+    body .banner-homepage{
+      align-items: flex-start;
+      padding: 100px 0;
+
+      .titles-banner-homepage{
+          padding: 0 10px;
+
+          h1{
+              font-size: 48px;
+              line-height: 48px;
+          }
+
+          span{
+              font-size: 20px;
+              line-height: 28px;
+              margin-top: 25px;
+          }
+
+          .arrow-fixed{
+            right: 49%;
+            bottom: 50px;
+          }
+      }
+  }
+
+  body .work-with-us-homepage{
+      padding: 100px 0;
+
+      .work-with-us-homepage-image{
+          padding: 0 50px;
+      }
+
+      .work-with-us-homepage-text{
+          padding: 0 10px;
+          margin-top: 30px;
+
+          p{
+              text-align: center;
+              font-size: 16px;
+              line-height: 22px;
+          }
+
+          .author{
+            font-size: 14px;
+            line-height: 21px;
+          }
+
+          .author-position{
+            font-size: 12px;
+            line-height: 18px;
+          }
+      }
+  }
+
+  body .menu{
+    padding: 20px;
+
+    .pages{
+      display: none;
+    }
+  }
+
+  body .cover-transition{
+
+    img{
+      max-width: 300px;
+    }
+  }
+  
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left{
+    left: 20px;
+    max-width: 220px;
+    top: 40px;
+    padding: 0;
+  }
+
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right{
+    max-width: 150px;
+    padding: 0;
+    right: 20px;
+    bottom: -100px;
+  }
+
+  body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-bottom-left{
+    max-width: 150px;
+    left: 20px;
+    padding: 0;
+    bottom: 80px;
+  }
+
+  body .unique-rugs-homepage{
+    padding: 240px 20px;
+    margin-top: 20px;
+
+    .unique-rugs-homepage-content{
+      padding: 0;
+
+      div{
+        padding: 0;
+      }
+
+      h2, p, a{
+        padding: 0;
+      }
+
+      h2{
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      p{
+        margin-top: 20px;
+      }
+    }
+  }
+
+  body .own-collection-homepage{
+    padding: 60px 0 0 0;
+    margin-top: 265px;
+    overflow: hidden;
+
+    .own-collection-homepage-top-section{
+      padding: 0 10px;
+
+      .top-section-left-div{
+
+        h3{
+          font-size: 48px;
+          line-height: 48px;
+          margin: 0;
+        }
+
+        p{
+          margin: 0;
+          margin-top: 20px;
+
+          &:first-of-type {
+            margin-top: 40px;
+          }
+        }
+
+        .button-div{
+          margin-top: 75px;
+        }
+      }
+
+      .top-section-right-div{
+        margin-top: 50px;
+        
+        img{
+          max-width: 200px;
+        }
+      }
+    }
+
+    .own-collection-homepage-bottom-section{
+      padding: 350px 10px 100px 10px;
+      flex-wrap: wrap;
+
+      .own-collection-homepage-overlay{
+        top: 230px;
+      }
+
+      .own-collection-homepage-overlay-background{
+        top: 230px;
+      }
+
+      .bottom-section-left-div{
+        padding: 0;
+        margin-top: 90px;
+
+        .bottom-section-left-div-title-section{
+          margin-bottom: 60px;
+          padding: 0;
+
+          span{
+            font-size: 14px;
+            line-height: 21px;
+          }
+          
+          h4{
+            font-size: 24px;
+            line-height: 24px;
+            margin-top: 10px;
+          }
+        }
+
+        .card-content{
+
+          .card-content-text{
+
+            span{
+              font-size: 16px;
+              line-height: 22px;
+            }
+
+            p{
+              font-size: 14px;
+              line-height: 21px;
+            }
+          }
+        }
+
+        .button-div{
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+
+  body .unique-samples-homepage{
+    padding-bottom: 200px;
+
+    .unique-samples-top-section{
+      display: none;
+    }
+
+    .unique-samples-bottom-section{
+      flex-direction: column-reverse;
+      padding: 0 10px;
+
+      .unique-samples-right-div{
+        max-height: 300px;
+        height: 250px;
+        margin-top: 150px;
+
+        .image-individual{
+          max-width: 200px;
+        }
+
+        .image-group{
+          top: -30px;
+        }
+      }
+
+      .unique-samples-left-div{
+
+        h3{
+          font-size: 32px;
+          line-height: 42px;
+          margin-top: 40px;
+        }
+
+        p{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  
+  body .footer{
+    padding: 20px 10px;
+
+    .footer-top-section{
+      flex-wrap: wrap;
+
+      .footer-div-left{
+
+        h5{
+          font-size: 20px;
+          line-height: 28px;
+        }
+
+        .social-icons-mobile{
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          margin-top: 30px;
+
+          a{
+            margin: 0 20px;
+          }
+        }
+      }
+
+      .footer-div-center{
+        margin-top: 40px;
+        padding: 0;
+
+        a{
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+
+      
+
+
+    }
+
+    .footer-middle-section{
+      display: none;
+    }
+  }
+
+  body .fixed-items{
+    display: none;
+  }
+
+  body .menu-open .close-button{
+    right: 40px;
+  }
+
+  body .footer .footer-bottom-section .footer-bottom-left-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    span{
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  body .footer .footer-bottom-section{
+    position: relative;
+    margin-top: 20px;
+
+    &::after{
+      content: '';
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 1px;
+      background-color: $gray;
+    }
+  }
+
+  body .footer .footer-bottom-section .footer-bottom-right-section a{
+    margin-left: 0 !important;
+    margin: 0 10px;
+  }
+
+  body .footer .footer-bottom-section .footer-bottom-right-section{
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide img{
+    height: 300px;
+    width: 300px !important;
+  }
+
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active img{
+    height: 400px;
+    width: 300px !important;
+    z-index: 2;
+  }
+
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider{
+    margin-left: -60px;
+  }
+
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__bullets{
+    left: 29%;
+    bottom: 100px;
+  }
+
+  body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active + .glide__slide{
+    margin-left: -160px !important;
+    z-index: 1;
+  }
+
   }
   
   // Mobile
@@ -409,6 +775,30 @@
     body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active + .glide__slide{
       margin-left: -160px !important;
       z-index: 1;
+    }
+
+    body .contact-us-popup .contact-us-popup-inner{
+      height: 100%;
+      flex-wrap: wrap;
+    }
+
+    body .contact-us-popup .contact-us-popup-inner .contact-us-popup-inner-left{
+      display: none;
+    }
+
+    body .contact-us-popup .contact-us-popup-inner .contact-us-popup-inner-right{
+      height: 100%;
+      padding: 20px;
+      justify-content: center;
+    }
+
+    body .contact-us-popup .contact-us-popup-inner .contact-us-popup-inner-right h3{
+      font-size: 22px;
+      margin-bottom: 40px;
+    }
+
+    body .contact-us-popup .contact-us-popup-inner .contact-us-popup-inner-right input{
+      width: 100%;
     }
 
   }

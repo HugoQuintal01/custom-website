@@ -118,11 +118,29 @@ addMenuHoverEffects(menuItems);
 // Open Menu
 document.getElementById('open-menu-button').addEventListener('click', function() {
     document.querySelector('.menu-open').style.top = '0';
+    document.querySelector('.home').style.overflow = 'hidden';
 });
 
 // Close Menu
 document.getElementById('close-menu-button').addEventListener('click', function() {
     document.querySelector('.menu-open').style.top = '-100vh';
+    document.querySelector('.home').style.overflow = 'scroll';
 });
   
+// Update Input user name
+document.getElementById('input-user-name').addEventListener('input', function() {
+  document.getElementById('user-name').innerText = ' ' + this.value;
+});
 
+
+// Open Contact Popup
+document.getElementById('button-open-contact-popup').addEventListener('click', function() {
+  document.getElementById('contact-us-popup-id').style.display = 'flex';
+  document.querySelector('.home').style.overflow = 'hidden';
+});
+
+// Close Contact Popup
+document.getElementById('close-button-contact-popup').addEventListener('click', function() {
+  document.getElementById('contact-us-popup-id').style.display = 'none';
+  document.querySelector('.home').style.overflow = 'scroll';
+});
