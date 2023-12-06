@@ -98,7 +98,7 @@ Template Name: Custom Homepage
                     <h4 class="col-ld-12 col-d-12 col-t-12 col-12">Bespoke Carpets</h4>
                 </div>
                 <div class="card-content col-ld-12 col-d-12 col-t-12 col-12">
-                    <div class="card-content-icon col-ld-1 col-d-1 col-t-2 col-2">
+                    <div class="card-content-icon col-ld-1 col-d-1 col-t-1 col-2">
                         <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/icon-carpets-01.svg" alt="icon-carpets-01">
                     </div>
                     <div class="card-content-text col-ld-8 col-d-10 col-t-10 col-10">
@@ -107,7 +107,7 @@ Template Name: Custom Homepage
                     </div>
                 </div>
                 <div class="card-content col-ld-12 col-d-12 col-t-12 col-12">
-                    <div class="card-content-icon col-ld-1 col-d-1 col-t-2 col-2">
+                    <div class="card-content-icon col-ld-1 col-d-1 col-t-1 col-2">
                         <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/icon-carpets-02.svg" alt="icon-carpets-02">
                     </div>
                     <div class="card-content-text col-ld-8 col-d-10 col-t-10 col-10">
@@ -116,7 +116,7 @@ Template Name: Custom Homepage
                     </div>
                 </div>
                 <div class="card-content col-ld-12 col-d-12 col-t-12 col-12">
-                    <div class="card-content-icon col-ld-1 col-d-1 col-t-2 col-2">
+                    <div class="card-content-icon col-ld-1 col-d-1 col-t-1 col-2">
                         <img src="http://localhost/uniquerugs/wp-content/uploads/2023/12/icon-carpets-03.svg" alt="icon-carpets-03">
                     </div>
                     <div class="card-content-text col-ld-8 col-d-10 col-t-10 col-10">
@@ -124,7 +124,7 @@ Template Name: Custom Homepage
                         <p class="col-ld-9 col-d-9 col-t-12 col-12">We offer a unique production time based on full in-house optimized processes and a delivery worldwide service.</p>
                     </div>
                 </div>
-                <div class="button-div col-ld-3 col-d-4 col-t-7 col-7">
+                <div class="button-div col-ld-3 col-d-4 col-t-5 col-7">
                     <a href="#" class="button button-white">Ir para Full service</a>
                 </div>
             </div>

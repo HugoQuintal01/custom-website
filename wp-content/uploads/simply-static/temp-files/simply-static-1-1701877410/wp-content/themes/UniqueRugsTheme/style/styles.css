@@ -1388,7 +1388,7 @@ body {
 }
 .menu-open .fixed-items .menu-fixed-image-04 {
   position: absolute;
-  right: -20%;
+  right: -40%;
   top: 10%;
   transition-duration: 0.3s;
   transition: right 1.4s ease;
@@ -1590,15 +1590,15 @@ body {
     padding: 100px 0;
   }
   body .banner-homepage .titles-banner-homepage {
-    padding: 0 10px;
+    padding: 50px 10px;
   }
   body .banner-homepage .titles-banner-homepage h1 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 68px;
+    line-height: 68px;
   }
   body .banner-homepage .titles-banner-homepage span {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 40px;
+    line-height: 40px;
     margin-top: 25px;
   }
   body .banner-homepage .titles-banner-homepage .arrow-fixed {
@@ -1606,10 +1606,12 @@ body {
     bottom: 50px;
   }
   body .work-with-us-homepage {
-    padding: 100px 0;
+    padding: 100px 50px;
+    justify-content: center;
   }
   body .work-with-us-homepage .work-with-us-homepage-image {
     padding: 0 50px;
+    justify-content: center;
   }
   body .work-with-us-homepage .work-with-us-homepage-text {
     padding: 0 10px;
@@ -1637,27 +1639,35 @@ body {
   body .cover-transition img {
     max-width: 300px;
   }
+  body .unique-rugs-homepage {
+    min-height: 65vh;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-top-left {
-    left: 20px;
-    max-width: 220px;
+    left: 40px;
+    max-width: 280px;
     top: 40px;
     padding: 0;
   }
   body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-right {
-    max-width: 150px;
+    max-width: 200px;
     padding: 0;
-    right: 20px;
+    right: 60px;
     bottom: -100px;
   }
   body .unique-rugs-homepage .unique-rugs-homepage-absolute.unique-rugs-homepage-image-bottom-left {
-    max-width: 150px;
-    left: 20px;
+    max-width: 200px;
+    left: 60px;
     padding: 0;
     bottom: 80px;
   }
   body .unique-rugs-homepage {
     padding: 240px 20px;
     margin-top: 20px;
+    min-height: 65vh;
+    padding-left: 65px;
+    padding-right: 65px;
   }
   body .unique-rugs-homepage .unique-rugs-homepage-content {
     padding: 0;
@@ -1676,12 +1686,13 @@ body {
     margin-top: 20px;
   }
   body .own-collection-homepage {
-    padding: 60px 0 0 0;
+    padding: 100px 0 0 0;
     margin-top: 265px;
     overflow: hidden;
   }
   body .own-collection-homepage .own-collection-homepage-top-section {
-    padding: 0 10px;
+    padding: 0 50px;
+    align-content: flex-start;
   }
   body .own-collection-homepage .own-collection-homepage-top-section .top-section-left-div h3 {
     font-size: 48px;
@@ -1702,11 +1713,12 @@ body {
     margin-top: 50px;
   }
   body .own-collection-homepage .own-collection-homepage-top-section .top-section-right-div img {
-    max-width: 200px;
+    max-width: 300px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section {
-    padding: 350px 10px 100px 10px;
+    padding: 350px 75px 100px 75px;
     flex-wrap: wrap;
+    margin-top: -600px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .own-collection-homepage-overlay {
     top: 230px;
@@ -1750,7 +1762,7 @@ body {
   }
   body .unique-samples-homepage .unique-samples-bottom-section {
     flex-direction: column-reverse;
-    padding: 0 10px;
+    padding: 0 50px;
   }
   body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div {
     max-height: 300px;
@@ -1763,6 +1775,9 @@ body {
   body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-right-div .image-group {
     top: -30px;
   }
+  body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div {
+    margin-top: 70px;
+  }
   body .unique-samples-homepage .unique-samples-bottom-section .unique-samples-left-div h3 {
     font-size: 32px;
     line-height: 42px;
@@ -1772,7 +1787,7 @@ body {
     margin-top: 20px;
   }
   body .footer {
-    padding: 20px 10px;
+    padding: 20px 75px;
   }
   body .footer .footer-top-section {
     flex-wrap: wrap;
@@ -1838,20 +1853,21 @@ body {
     margin-top: 40px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide img {
-    height: 300px;
-    width: 300px !important;
+    height: 400px;
+    width: 400px !important;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active img {
-    height: 400px;
-    width: 300px !important;
+    height: 500px;
+    width: 400px !important;
     z-index: 2;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider {
     margin-left: -60px;
+    margin-top: 70px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__bullets {
-    left: 29%;
-    bottom: 100px;
+    left: 52%;
+    bottom: 20px;
   }
   body .own-collection-homepage .own-collection-homepage-bottom-section .bottom-section-right-div .slider .glide .glide__track .glide__slides .glide__slide--active + .glide__slide {
     margin-left: -160px !important;
@@ -2142,9 +2158,10 @@ body {
     height: 100%;
     padding: 20px;
     justify-content: center;
+    border-radius: 0;
   }
   body .contact-us-popup .contact-us-popup-inner .contact-us-popup-inner-right h3 {
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 40px;
   }
   body .contact-us-popup .contact-us-popup-inner .contact-us-popup-inner-right input {
