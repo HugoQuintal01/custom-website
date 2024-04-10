@@ -18,4 +18,4 @@ The Custom WordPress Website is a bespoke website built using PHP and WordPress,
 
 
 Run:
-https://hugoquintal01.github.io/uniquerugs/
+https://hugoquintal01.github.io/custom-website/
